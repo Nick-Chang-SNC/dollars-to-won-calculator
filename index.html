@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Dollars to Won Calculator</title>
+
+    <!-- Regular CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-dark">
+    <div class="hero-banner">
+      <img src="img/korea-banner.jpg" class="img-fluid" alt="" />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5 mb-5">
+            <h1 class="heading pb-3">Dollars to Won Calculator</h1>
+            <form id="calc-form">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">$</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="dollar-amount"
+                  placeholder="Dollars"
+                />
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">₩</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="won-amount"
+                  placeholder="Won"
+                />
+              </div>
+
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary">Convert</button>
+              </div>
+            </form>
+
+            <!-- LOADER HERE -->
+            <div id="loading">
+              <img src="img/loading.gif" alt="" />
+            </div>
+
+            <!-- RESULTS -->
+            <div id="results">
+              <h5 class="pb-3">Results</h5>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">$</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="dollar-convert"
+                  placeholder="Dollars"
+                  disabled
+                />
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">₩</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="won-convert"
+                  placeholder="Won"
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
